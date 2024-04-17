@@ -11,8 +11,7 @@
         "laravel/framework": "^8.75",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-        "paypal/rest-api-sdk-php": "*",
-        "srmklive/paypal": "^3.0",
+        "paypal/rest-api-sdk-php": "^1.14",
         "stripe/stripe-php": "^13.13",
         "twilio/sdk": "^6.32",
         "tymon/jwt-auth": "^1.0"
