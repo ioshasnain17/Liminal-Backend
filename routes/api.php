@@ -42,6 +42,11 @@ Route::middleware(['auth:api'])->group(function () {
 ////////////////////////////End Search Route
 ///
 
+
+Route::post('/paypal/payment', [PayPalController::class, 'createPayment']);
+Route::post('/paypal/execute', [PayPalController::class, 'executePayment']);
+
+
     Route::post('paypal',[PayPalController::class,'createPayment']);
     Route::get('execute',[PayPalController::class,'executePayment'])->name("paypal.execute");
     Route::post('subscription/save',[SubscriptionController::class,'paySubscription']);
